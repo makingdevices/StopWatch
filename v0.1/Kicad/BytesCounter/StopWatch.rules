@@ -1,0 +1,117 @@
+
+(rules PCB StopWatch
+  (snap_angle 
+    fortyfive_degree
+  )
+  (autoroute_settings
+    (fanout off)
+    (autoroute on)
+    (postroute on)
+    (vias on)
+    (via_costs 50)
+    (plane_via_costs 5)
+    (start_ripup_costs 100)
+    (start_pass_no 6451)
+    (layer_rule F.Cu
+      (active on)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 2.4)
+    )
+    (layer_rule B.Cu
+      (active on)
+      (preferred_direction vertical)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 1.7)
+    )
+  )
+  (rule
+    (width 200.0)
+    (clear 200.2)
+    (clear 100.0 (type smd_to_turn_gap))
+    (clear 50.0 (type smd_smd))
+  )
+  (padstack "Via[0-1]_800:400_um"
+    (shape
+      (circle F.Cu 800.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 800.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (padstack "Via[0-1]_3750:2500_um"
+    (shape
+      (circle F.Cu 3750.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 3750.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (via 
+    "Via[0-1]_800:400_um" "Via[0-1]_800:400_um" default
+  )
+  (via 
+    "Via[0-1]_3750:2500_um" "Via[0-1]_3750:2500_um" default
+  )
+  (via 
+    "Via[0-1]_800:400_um-kicad_default" "Via[0-1]_800:400_um" "kicad_default"
+  )
+  (via 
+    "Via[0-1]_3750:2500_um-kicad_default" "Via[0-1]_3750:2500_um" "kicad_default"
+  )
+  (via 
+    "Via[0-1]_800:400_um-Power" "Via[0-1]_800:400_um" Power
+  )
+  (via 
+    "Via[0-1]_3750:2500_um-Power" "Via[0-1]_3750:2500_um" Power
+  )
+  (via_rule
+    default "Via[0-1]_800:400_um"
+  )
+  (via_rule
+    "kicad_default" "Via[0-1]_800:400_um-kicad_default"
+  )
+  (via_rule
+    Power "Via[0-1]_800:400_um-Power"
+  )
+  (class default
+    (clearance_class default)
+    (via_rule default)
+    (rule
+      (width 200.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class "kicad_default"
+    "/B_2" "/B_1" "Net-(IC1-Pad17)" "/C_1" "/C_2" "/C_3" "/C_4" "/C_Buzzer"
+    "Net-(LED1-Pad2)" "Net-(Q1-Pad1)" "Net-(Q2-Pad1)" "Net-(Q3-Pad1)" "Net-(Q4-Pad1)" "Net-(Q5-Pad1)" "Net-(R11-Pad1)" "Net-(R15-Pad1)"
+    /MCLR "Net-(J1-Pad6)" "/C_U13" "/C_display" "Net-(IC2-Pad1)" /U3 /U1 "Net-(Q6-Pad1)"
+    "Net-(Q7-Pad1)" "Net-(Q8-Pad1)" "Net-(Q9-Pad1)" "Net-(Q10-Pad1)" "Net-(Q11-Pad1)"
+    (clearance_class "kicad_default")
+    (via_rule kicad_default)
+    (rule
+      (width 200.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class Power
+    gnd +3V "/D_a" "/D_b" "/D_c" "/D_dp" "/D_g" "/D_d"
+    "/D_e" "/D_f" "Net-(LS1-Pad1)" "Net-(Q1-Pad3)" "Net-(Q2-Pad3)" "Net-(Q3-Pad3)" "Net-(Q4-Pad3)" "Net-(Q5-Pad3)"
+    "/CC_1" "/CC_2" "/CC_3" "/CC_4" "Net-(Q6-Pad3)" "Net-(Q7-Pad3)" "Net-(Q8-Pad3)" "Net-(Q9-Pad3)"
+    "/CC_5" "/CC_6" "/CC_7" "/CC_8"
+    (clearance_class Power)
+    (via_rule Power)
+    (rule
+      (width 250.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+)

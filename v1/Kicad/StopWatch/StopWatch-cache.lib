@@ -1,0 +1,332 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# Display_Character_CC56-12EWA
+#
+DEF Display_Character_CC56-12EWA U 0 20 Y Y 1 F N
+F0 "U" -950 550 50 H V C CNN
+F1 "Display_Character_CC56-12EWA" 750 550 50 H V C CNN
+F2 "Display_7Segment:CA56-12EWA" 0 -600 50 H I C CNN
+F3 "" -430 30 50 H I C CNN
+$FPLIST
+ *CA56*12EWA*
+$ENDFPLIST
+DRAW
+C 300 -160 14 1 0 10 F
+C 700 -150 14 1 0 10 F
+C -540 -150 14 0 1 10 F
+C -100 -150 14 0 1 10 F
+T 0 -600 250 60 0 0 0 a Normal 0 C C
+T 0 -480 110 60 0 0 0 b Normal 0 C C
+T 0 -520 -70 60 0 0 0 c Normal 0 C C
+T 0 -700 -110 60 0 0 0 d Normal 0 C C
+T 0 -540 -250 60 0 0 0 DP1 Normal 0 C C
+T 0 -90 -250 60 0 0 0 DP2 Normal 0 C C
+T 0 300 -250 60 0 0 0 DP3 Normal 0 C C
+T 0 700 -240 60 0 0 0 DP4 Normal 0 C C
+T 0 -840 -60 60 0 0 0 e Normal 0 C C
+T 0 -770 120 60 0 0 0 f Normal 0 C C
+T 0 -650 60 60 0 0 0 g Normal 0 C C
+S -1000 500 1000 -500 0 0 10 f
+P 2 0 0 10 -800 -150 -750 0 N
+P 2 0 0 10 -750 -150 -650 -150 N
+P 2 0 0 10 -740 50 -690 200 N
+P 2 0 0 10 -700 0 -600 0 N
+P 2 0 0 10 -640 200 -540 200 N
+P 2 0 0 10 -600 -150 -550 0 N
+P 2 0 0 10 -540 50 -490 200 N
+P 2 0 0 10 -350 -150 -300 0 N
+P 2 0 0 10 -300 -150 -200 -150 N
+P 2 0 0 10 -290 50 -240 200 N
+P 2 0 0 10 -250 0 -150 0 N
+P 2 0 0 10 -190 200 -90 200 N
+P 2 0 0 10 -150 -150 -100 0 N
+P 2 0 0 10 -90 50 -40 200 N
+P 2 0 0 10 50 -150 100 0 N
+P 2 0 0 10 100 -150 200 -150 N
+P 2 0 0 10 110 50 160 200 N
+P 2 0 0 10 150 0 250 0 N
+P 2 0 0 10 210 200 310 200 N
+P 2 0 0 10 250 -150 300 0 N
+P 2 0 0 10 310 50 360 200 N
+P 2 0 0 10 440 -150 490 0 N
+P 2 0 0 10 490 -150 590 -150 N
+P 2 0 0 10 500 50 550 200 N
+P 2 0 0 10 540 0 640 0 N
+P 2 0 0 10 600 200 700 200 N
+P 2 0 0 10 640 -150 690 0 N
+P 2 0 0 10 700 50 750 200 N
+X e 1 -1100 -100 100 R 50 50 1 1 I
+X f 10 -1100 -200 100 R 50 50 1 1 I
+X a 11 -1100 300 100 R 50 50 1 1 I
+X CC1 12 1100 -100 100 L 50 50 1 1 I
+X d 2 -1100 0 100 R 50 50 1 1 I
+X DPX 3 -1100 -400 100 R 50 50 1 1 I
+X c 4 -1100 100 100 R 50 50 1 1 I
+X g 5 -1100 -300 100 R 50 50 1 1 I
+X CC4 6 1100 -400 100 L 50 50 1 1 I
+X b 7 -1100 200 100 R 50 50 1 1 I
+X CC3 8 1100 -300 100 L 50 50 1 1 I
+X CC2 9 1100 -200 100 L 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# Library_Loader_TC2030-MCP-NL
+#
+DEF Library_Loader_TC2030-MCP-NL J 0 30 Y Y 1 F N
+F0 "J" 1650 300 50 H V L CNN
+F1 "Library_Loader_TC2030-MCP-NL" 1650 200 50 H V L CNN
+F2 "TC2030-MCP-NL" 1650 100 50 H I L CNN
+F3 "http://uk.rs-online.com/web/p/products/8252561" 1650 0 50 H I L CNN
+F4 "TC2030-MCP-NL PCB Footprint (no legs)" 1650 -100 50 H I L CNN "Description"
+F5 "8252561" 1650 -300 50 H I L CNN "RS Part Number"
+F6 "http://uk.rs-online.com/web/p/products/8252561" 1650 -400 50 H I L CNN "RS Price/Stock"
+F7 "Microchip" 1650 -500 50 H I L CNN "Manufacturer_Name"
+F8 "TC2030-MCP-NL" 1650 -600 50 H I L CNN "Manufacturer_Part_Number"
+DRAW
+P 5 0 1 6 200 100 1600 100 1600 -300 200 -300 200 100 N
+X -MCLR/VPP 1 0 0 200 R 50 50 0 0 P
+X VDD 2 0 -100 200 R 50 50 0 0 P
+X GND 3 0 -200 200 R 50 50 0 0 P
+X PGD_(ICSPDAT) 4 1800 0 200 L 50 50 0 0 P
+X PGC_(ICSPCLK) 5 1800 -100 200 L 50 50 0 0 P
+X UNUSED/LVP 6 1800 -200 200 L 50 50 0 0 P
+ENDDRAW
+ENDDEF
+#
+# Library_Loader_ZLLS410TA
+#
+DEF Library_Loader_ZLLS410TA D 0 30 Y Y 1 F N
+F0 "D" 450 200 50 H V L CNN
+F1 "Library_Loader_ZLLS410TA" 450 100 50 H V L CNN
+F2 "SOD2513X120N" 450 0 50 H I L CNN
+F3 "http://uk.rs-online.com/web/p/products/7515203P" 450 -100 50 H I L CNN
+F4 "Diodes Inc ZLLS410TA, SMT Schottky Diode, 10V 750mA, 3ns, 2-Pin SOD-323" 450 -200 50 H I L CNN "Description"
+F5 "1.2" 450 -300 50 H I L CNN "Height"
+F6 "7515203P" 450 -400 50 H I L CNN "RS Part Number"
+F7 "http://uk.rs-online.com/web/p/products/7515203P" 450 -500 50 H I L CNN "RS Price/Stock"
+F8 "Diodes Inc." 450 -600 50 H I L CNN "Manufacturer_Name"
+F9 "ZLLS410TA" 450 -700 50 H I L CNN "Manufacturer_Part_Number"
+DRAW
+P 2 0 1 6 200 100 200 -100 N
+P 4 0 1 10 200 0 400 100 400 -100 200 0 F
+X ~ 1 0 0 200 R 50 50 0 0 P
+X ~ 2 600 0 200 L 50 50 0 0 P
+ENDDRAW
+ENDDEF
+#
+# StopWatch-rescue_74LVC1G06GW,125-SamacSys_Parts
+#
+DEF StopWatch-rescue_74LVC1G06GW,125-SamacSys_Parts IC 0 30 Y Y 1 F N
+F0 "IC" 950 300 50 H V L CNN
+F1 "StopWatch-rescue_74LVC1G06GW,125-SamacSys_Parts" 950 200 50 H V L CNN
+F2 "SOT65P212X110-5N" 950 100 50 H I L CNN
+F3 "https://assets.nexperia.com/documents/data-sheet/74LVC1G06.pdf" 950 0 50 H I L CNN
+F4 "74LVC1G06 - inverter with open-drain output@en-us" 950 -100 50 H I L CNN "Description"
+F5 "1.1" 950 -200 50 H I L CNN "Height"
+F6 "Nexperia" 950 -500 50 H I L CNN "Manufacturer_Name"
+F7 "74LVC1G06GW,125" 950 -600 50 H I L CNN "Manufacturer_Part_Number"
+DRAW
+P 5 0 1 6 200 100 900 100 900 -300 200 -300 200 100 N
+X n.c. 1 0 0 200 R 50 50 0 0 P
+X A 2 0 -100 200 R 50 50 0 0 P
+X GND 3 0 -200 200 R 50 50 0 0 P
+X Y 4 1100 0 200 L 50 50 0 0 P
+X VCC 5 1100 -100 200 L 50 50 0 0 P
+ENDDRAW
+ENDDEF
+#
+# StopWatch-rescue_B3F-4050-SamacSys_Parts-HVolt_sub-system-FIT
+#
+DEF StopWatch-rescue_B3F-4050-SamacSys_Parts-HVolt_sub-system-FIT S 0 30 Y Y 1 F N
+F0 "S" 650 300 50 H V L CNN
+F1 "StopWatch-rescue_B3F-4050-SamacSys_Parts-HVolt_sub-system-FIT" 650 200 50 H V L CNN
+F2 "B3F-4000" 650 100 50 H I L CNN
+F3 "https://www.omron.com/ecb/products/pdf/en-b3f.pdf" 650 0 50 H I L CNN
+F4 "lvory Plunger Tactile Switch, SPST-NO 0.05 A@ 24 V dc 3mm" 650 -100 50 H I L CNN "Description"
+F5 "Omron Electronics" 650 -300 50 H I L CNN "Manufacturer_Name"
+F6 "B3F-4050" 650 -400 50 H I L CNN "Manufacturer_Part_Number"
+F7 "653-B3F-4050" 650 -500 50 H I L CNN "Mouser Part Number"
+F8 "https://www.mouser.com/Search/Refine.aspx?Keyword=653-B3F-4050" 650 -600 50 H I L CNN "Mouser Price/Stock"
+F9 "6866768P" 650 -700 50 H I L CNN "RS Part Number"
+F10 "http://uk.rs-online.com/web/p/products/6866768P" 650 -800 50 H I L CNN "RS Price/Stock"
+DRAW
+P 5 0 1 6 200 100 600 100 600 -200 200 -200 200 100 N
+X 1 1 0 0 200 R 50 50 0 0 U
+X 2 2 0 -100 200 R 50 50 0 0 U
+X 3 3 800 0 200 L 50 50 0 0 U
+X 4 4 800 -100 200 L 50 50 0 0 U
+ENDDRAW
+ENDDEF
+#
+# StopWatch-rescue_CH075-2032-SamacSys_Parts
+#
+DEF StopWatch-rescue_CH075-2032-SamacSys_Parts U 0 30 Y Y 1 F N
+F0 "U" 650 300 50 H V L CNN
+F1 "StopWatch-rescue_CH075-2032-SamacSys_Parts" 650 200 50 H V L CNN
+F2 "CH0752032" 650 100 50 H I L CNN
+F3 "" 650 0 50 H I L CNN
+F4 "RS Pro Battery Holder" 650 -100 50 H I L CNN "Description"
+F5 "6.6" 650 -200 50 H I L CNN "Height"
+F6 "RS Components" 650 -500 50 H I L CNN "Manufacturer_Name"
+F7 "CH075-2032" 650 -600 50 H I L CNN "Manufacturer_Part_Number"
+DRAW
+P 5 0 1 6 200 100 600 100 600 -200 200 -200 200 100 N
+X 1 1 0 0 200 R 50 50 0 0 P
+X 2 2 0 -100 200 R 50 50 0 0 P
+ENDDRAW
+ENDDEF
+#
+# StopWatch-rescue_GCG21BR71H154KA01K-SamacSys_Parts
+#
+DEF StopWatch-rescue_GCG21BR71H154KA01K-SamacSys_Parts C 0 30 Y Y 1 F N
+F0 "C" 350 250 50 H V L CNN
+F1 "StopWatch-rescue_GCG21BR71H154KA01K-SamacSys_Parts" 350 150 50 H V L CNN
+F2 "CAPC2012X145N" 350 50 50 H I L CNN
+F3 "https://psearch.en.murata.com/capacitor/product/GCG21BR71H154KA01%23.html" 350 -50 50 H I L CNN
+F4 "Capacitor L=2.0mm W=1.25mm T=1.25mm" 350 -150 50 H I L CNN "Description"
+F5 "1.45" 350 -250 50 H I L CNN "Height"
+F6 "Murata Electronics" 350 -550 50 H I L CNN "Manufacturer_Name"
+F7 "GCG21BR71H154KA01K" 350 -650 50 H I L CNN "Manufacturer_Part_Number"
+DRAW
+P 2 0 1 6 200 0 220 0 N
+P 2 0 1 6 220 100 220 -100 N
+P 2 0 1 6 280 0 300 0 N
+P 2 0 1 6 280 100 280 -100 N
+X ~ 1 0 0 200 R 50 50 0 0 P
+X ~ 2 500 0 200 L 50 50 0 0 P
+ENDDRAW
+ENDDEF
+#
+# StopWatch-rescue_KTR10EZPF4220-SamacSys_Parts
+#
+DEF StopWatch-rescue_KTR10EZPF4220-SamacSys_Parts R 0 30 Y Y 1 F N
+F0 "R" 550 250 50 H V L CNN
+F1 "StopWatch-rescue_KTR10EZPF4220-SamacSys_Parts" 550 150 50 H V L CNN
+F2 "RESC2012X65N" 550 50 50 H I L CNN
+F3 "http://rohmfs.rohm.com/en/products/databook/datasheet/passive/resistor/chip_resistor/ktr.pdf" 550 -50 50 H I L CNN
+F4 "ROHM 0805 Resistor Chip" 550 -150 50 H I L CNN "Description"
+F5 "0.65" 550 -250 50 H I L CNN "Height"
+F6 "ROHM Semiconductor" 550 -550 50 H I L CNN "Manufacturer_Name"
+F7 "KTR10EZPF4220" 550 -650 50 H I L CNN "Manufacturer_Part_Number"
+DRAW
+P 5 0 1 6 200 50 500 50 500 -50 200 -50 200 50 N
+X ~ 1 0 0 200 R 50 50 0 0 P
+X ~ 2 700 0 200 L 50 50 0 0 P
+ENDDRAW
+ENDDEF
+#
+# StopWatch-rescue_LTST-C171GKT-SamacSys_Parts
+#
+DEF StopWatch-rescue_LTST-C171GKT-SamacSys_Parts LED 0 30 Y Y 1 F N
+F0 "LED" 500 350 50 H V L BNN
+F1 "StopWatch-rescue_LTST-C171GKT-SamacSys_Parts" 500 250 50 H V L BNN
+F2 "LEDC2012X90N" 500 150 50 H I L BNN
+F3 "http://uk.rs-online.com/web/p/products/6920935P" 500 50 50 H I L BNN
+F4 "Lite-On LTST-C171GKT, CHIPLED 0805 569 nm Green LED, 2012 (0805) SMD package" 500 -50 50 H I L BNN "Description"
+F5 "0.9" 500 -150 50 H I L BNN "Height"
+F6 "6920935P" 500 -250 50 H I L BNN "RS Part Number"
+F7 "http://uk.rs-online.com/web/p/products/6920935P" 500 -350 50 H I L BNN "RS Price/Stock"
+F8 "Lite-On" 500 -450 50 H I L BNN "Manufacturer_Name"
+F9 "LTST-C171GKT" 500 -550 50 H I L BNN "Manufacturer_Part_Number"
+DRAW
+P 2 0 1 6 100 0 200 0 N
+P 2 0 1 6 200 100 200 -100 N
+P 2 0 1 6 250 100 150 200 N
+P 2 0 1 6 350 100 250 200 N
+P 2 0 1 6 400 0 500 0 N
+P 4 0 1 6 200 0 400 100 400 -100 200 0 N
+P 4 0 1 10 210 170 180 140 150 200 210 170 F
+P 4 0 1 10 310 170 280 140 250 200 310 170 F
+X K 1 0 0 100 R 50 50 0 0 P
+X A 2 600 0 100 L 50 50 0 0 P
+ENDDRAW
+ENDDEF
+#
+# StopWatch-rescue_PIC18LF14K50-I_SO-SamacSys_Parts
+#
+DEF StopWatch-rescue_PIC18LF14K50-I_SO-SamacSys_Parts IC 0 30 Y Y 1 F N
+F0 "IC" 3350 300 50 H V L CNN
+F1 "StopWatch-rescue_PIC18LF14K50-I_SO-SamacSys_Parts" 3350 200 50 H V L CNN
+F2 "SOIC127P1030X265-20N" 3350 100 50 H I L CNN
+F3 "http://uk.rs-online.com/web/p/products/6669239P" 3350 0 50 H I L CNN
+F4 "MCU 16K Flash 768 RAM USB 2.0 SOIC20" 3350 -100 50 H I L CNN "Description"
+F5 "2.65" 3350 -200 50 H I L CNN "Height"
+F6 "6669239P" 3350 -300 50 H I L CNN "RS Part Number"
+F7 "http://uk.rs-online.com/web/p/products/6669239P" 3350 -400 50 H I L CNN "RS Price/Stock"
+F8 "Microchip" 3350 -500 50 H I L CNN "Manufacturer_Name"
+F9 "PIC18LF14K50-I/SO" 3350 -600 50 H I L CNN "Manufacturer_Part_Number"
+F10 "70047097" 3350 -700 50 H I L CNN "Allied_Number"
+DRAW
+P 5 0 1 6 200 100 3300 100 3300 -1000 200 -1000 200 100 N
+X VDD 1 0 0 200 R 50 50 0 0 P
+X IOCB7/TX/CK/RB7 10 0 -900 200 R 50 50 0 0 P
+X RB6/IOCB6/SCK/SCL 11 3500 -900 200 L 50 50 0 0 P
+X RB5/AN11/IOCB5/RX/DT 12 3500 -800 200 L 50 50 0 0 P
+X RB4/AN10/IOCB4/SDI/SDA 13 3500 -700 200 L 50 50 0 0 P
+X RC2/AN6/P1D/C12IN2-/CVREF/INT2 14 3500 -600 200 L 50 50 0 0 P
+X RC1/AN5/C12IN1-/INT1/VREF- 15 3500 -500 200 L 50 50 0 0 P
+X RC0/AN4/C12IN+/INT0/VREF+ 16 3500 -400 200 L 50 50 0 0 P
+X VUSB 17 3500 -300 200 L 50 50 0 0 P
+X RA1/IOCA1/D-/PGC 18 3500 -200 200 L 50 50 0 0 P
+X RA0/IOCA0/D+/PGD 19 3500 -100 200 L 50 50 0 0 P
+X IOCA5/OSC1/CLKIN/RA5 2 0 -100 200 R 50 50 0 0 P
+X VSS 20 3500 0 200 L 50 50 0 0 P
+X AN3/IOCA3/OSC2/CLKOUT/RA4 3 0 -200 200 R 50 50 0 0 P
+X IOCA3/~MCLR~/VPP/RA3 4 0 -300 200 R 50 50 0 0 P
+X CCP1/P1A/T0CKI/RC5 5 0 -400 200 R 50 50 0 0 P
+X P1B/C12OUT/SRQ/RC4 6 0 -500 200 R 50 50 0 0 P
+X N7/P1C/C12IN3-/PGM/RC3 7 0 -600 200 R 50 50 0 0 P
+X AN8/~SS~/T13CKI/T1OSCI/RC6 8 0 -700 200 R 50 50 0 0 P
+X AN9/SDO/T1OSCO/RC7 9 0 -800 200 R 50 50 0 0 P
+ENDDRAW
+ENDDEF
+#
+# StopWatch-rescue_SMMBT5551LT1G-SamacSys_Parts
+#
+DEF StopWatch-rescue_SMMBT5551LT1G-SamacSys_Parts Q 0 30 Y Y 1 F N
+F0 "Q" 550 50 50 H V L CNN
+F1 "StopWatch-rescue_SMMBT5551LT1G-SamacSys_Parts" 550 -50 50 H V L CNN
+F2 "SOT96P237X111-3N" 550 -150 50 H I L CNN
+F3 "http://uk.rs-online.com/web/p/products/1841498P" 550 -250 50 H I L CNN
+F4 "NPN Bipolar Transistor, 600 mA 160 V, 3-pin SOT-23" 550 -350 50 H I L CNN "Description"
+F5 "1.11" 550 -450 50 H I L CNN "Height"
+F6 "1841498P" 550 -550 50 H I L CNN "RS Part Number"
+F7 "http://uk.rs-online.com/web/p/products/1841498P" 550 -650 50 H I L CNN "RS Price/Stock"
+F8 "ON Semiconductor" 550 -750 50 H I L CNN "Manufacturer_Name"
+F9 "SMMBT5551LT1G" 550 -850 50 H I L CNN "Manufacturer_Part_Number"
+F10 "70300580" 550 -950 50 H I L CNN "Allied_Number"
+DRAW
+C 350 0 158 0 1 10 N
+P 2 0 1 6 100 0 300 0 N
+P 2 0 1 6 300 -50 400 -150 N
+P 2 0 1 6 300 50 400 150 N
+P 2 0 1 20 300 100 300 -100 N
+P 2 0 1 6 400 -150 400 -200 N
+P 2 0 1 6 400 150 400 200 N
+P 4 0 1 10 330 -100 350 -80 370 -120 330 -100 F
+X ~ 1 0 0 100 R 50 50 0 0 P
+X ~ 2 400 -300 100 U 50 50 0 0 P
+X ~ 3 400 300 100 D 50 50 0 0 P
+ENDDRAW
+ENDDEF
+#
+# StopWatch-rescue_TMB12A05-SamacSys_Parts
+#
+DEF StopWatch-rescue_TMB12A05-SamacSys_Parts LS 0 30 Y Y 1 F N
+F0 "LS" 650 300 50 H V L CNN
+F1 "StopWatch-rescue_TMB12A05-SamacSys_Parts" 650 200 50 H V L CNN
+F2 "TMB12A05" 650 100 50 H I L CNN
+F3 "https://datasheet.lcsc.com/szlcsc/Jiangsu-Huaneng-Elec-TMB12A05_C96093.pdf" 650 0 50 H I L CNN
+F4 "12*9.5 Buzzers RoHS" 650 -100 50 H I L CNN "Description"
+F5 "9.5" 650 -200 50 H I L CNN "Height"
+F6 "Jiangsu Huaneng Elec" 650 -500 50 H I L CNN "Manufacturer_Name"
+F7 "TMB12A05" 650 -600 50 H I L CNN "Manufacturer_Part_Number"
+DRAW
+P 5 0 1 6 200 100 600 100 600 -200 200 -200 200 100 N
+X + 1 0 -100 200 R 50 50 0 0 P
+X - 2 0 0 200 R 50 50 0 0 P
+ENDDRAW
+ENDDEF
+#
+#End Library

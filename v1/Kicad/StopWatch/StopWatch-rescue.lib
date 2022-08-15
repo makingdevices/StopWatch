@@ -1,0 +1,243 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# 74LVC1G06GW,125-SamacSys_Parts
+#
+DEF 74LVC1G06GW,125-SamacSys_Parts IC 0 30 Y Y 1 F N
+F0 "IC" 950 300 50 H V L CNN
+F1 "74LVC1G06GW,125-SamacSys_Parts" 950 200 50 H V L CNN
+F2 "SOT65P212X110-5N" 950 100 50 H I L CNN
+F3 "https://assets.nexperia.com/documents/data-sheet/74LVC1G06.pdf" 950 0 50 H I L CNN
+F4 "74LVC1G06 - inverter with open-drain output@en-us" 950 -100 50 H I L CNN "Description"
+F5 "1.1" 950 -200 50 H I L CNN "Height"
+F6 "Nexperia" 950 -500 50 H I L CNN "Manufacturer_Name"
+F7 "74LVC1G06GW,125" 950 -600 50 H I L CNN "Manufacturer_Part_Number"
+DRAW
+P 5 0 1 6 200 100 900 100 900 -300 200 -300 200 100 N
+X n.c. 1 0 0 200 R 50 50 0 0 P
+X A 2 0 -100 200 R 50 50 0 0 P
+X GND 3 0 -200 200 R 50 50 0 0 P
+X Y 4 1100 0 200 L 50 50 0 0 P
+X VCC 5 1100 -100 200 L 50 50 0 0 P
+ENDDRAW
+ENDDEF
+#
+# B3F-4050-SamacSys_Parts-HVolt_sub-system-FIT
+#
+DEF B3F-4050-SamacSys_Parts-HVolt_sub-system-FIT S 0 30 Y Y 1 F N
+F0 "S" 650 300 50 H V L CNN
+F1 "B3F-4050-SamacSys_Parts-HVolt_sub-system-FIT" 650 200 50 H V L CNN
+F2 "B3F-4000" 650 100 50 H I L CNN
+F3 "https://www.omron.com/ecb/products/pdf/en-b3f.pdf" 650 0 50 H I L CNN
+F4 "lvory Plunger Tactile Switch, SPST-NO 0.05 A@ 24 V dc 3mm" 650 -100 50 H I L CNN "Description"
+F5 "Omron Electronics" 650 -300 50 H I L CNN "Manufacturer_Name"
+F6 "B3F-4050" 650 -400 50 H I L CNN "Manufacturer_Part_Number"
+F7 "653-B3F-4050" 650 -500 50 H I L CNN "Mouser Part Number"
+F8 "https://www.mouser.com/Search/Refine.aspx?Keyword=653-B3F-4050" 650 -600 50 H I L CNN "Mouser Price/Stock"
+F9 "6866768P" 650 -700 50 H I L CNN "RS Part Number"
+F10 "http://uk.rs-online.com/web/p/products/6866768P" 650 -800 50 H I L CNN "RS Price/Stock"
+DRAW
+P 5 0 1 6 200 100 600 100 600 -200 200 -200 200 100 N
+X 1 1 0 0 200 R 50 50 0 0 U
+X 2 2 0 -100 200 R 50 50 0 0 U
+X 3 3 800 0 200 L 50 50 0 0 U
+X 4 4 800 -100 200 L 50 50 0 0 U
+ENDDRAW
+ENDDEF
+#
+# CH075-2032-SamacSys_Parts
+#
+DEF CH075-2032-SamacSys_Parts U 0 30 Y Y 1 F N
+F0 "U" 650 300 50 H V L CNN
+F1 "CH075-2032-SamacSys_Parts" 650 200 50 H V L CNN
+F2 "CH0752032" 650 100 50 H I L CNN
+F3 "" 650 0 50 H I L CNN
+F4 "RS Pro Battery Holder" 650 -100 50 H I L CNN "Description"
+F5 "6.6" 650 -200 50 H I L CNN "Height"
+F6 "RS Components" 650 -500 50 H I L CNN "Manufacturer_Name"
+F7 "CH075-2032" 650 -600 50 H I L CNN "Manufacturer_Part_Number"
+DRAW
+P 5 0 1 6 200 100 600 100 600 -200 200 -200 200 100 N
+X 1 1 0 0 200 R 50 50 0 0 P
+X 2 2 0 -100 200 R 50 50 0 0 P
+ENDDRAW
+ENDDEF
+#
+# GCG21BR71H154KA01K-SamacSys_Parts
+#
+DEF GCG21BR71H154KA01K-SamacSys_Parts C 0 30 Y Y 1 F N
+F0 "C" 350 250 50 H V L CNN
+F1 "GCG21BR71H154KA01K-SamacSys_Parts" 350 150 50 H V L CNN
+F2 "CAPC2012X145N" 350 50 50 H I L CNN
+F3 "https://psearch.en.murata.com/capacitor/product/GCG21BR71H154KA01%23.html" 350 -50 50 H I L CNN
+F4 "Capacitor L=2.0mm W=1.25mm T=1.25mm" 350 -150 50 H I L CNN "Description"
+F5 "1.45" 350 -250 50 H I L CNN "Height"
+F6 "Murata Electronics" 350 -550 50 H I L CNN "Manufacturer_Name"
+F7 "GCG21BR71H154KA01K" 350 -650 50 H I L CNN "Manufacturer_Part_Number"
+DRAW
+P 2 0 1 6 200 0 220 0 N
+P 2 0 1 6 220 100 220 -100 N
+P 2 0 1 6 280 0 300 0 N
+P 2 0 1 6 280 100 280 -100 N
+X ~ 1 0 0 200 R 50 50 0 0 P
+X ~ 2 500 0 200 L 50 50 0 0 P
+ENDDRAW
+ENDDEF
+#
+# KTR10EZPF4220-SamacSys_Parts
+#
+DEF KTR10EZPF4220-SamacSys_Parts R 0 30 Y Y 1 F N
+F0 "R" 550 250 50 H V L CNN
+F1 "KTR10EZPF4220-SamacSys_Parts" 550 150 50 H V L CNN
+F2 "RESC2012X65N" 550 50 50 H I L CNN
+F3 "http://rohmfs.rohm.com/en/products/databook/datasheet/passive/resistor/chip_resistor/ktr.pdf" 550 -50 50 H I L CNN
+F4 "ROHM 0805 Resistor Chip" 550 -150 50 H I L CNN "Description"
+F5 "0.65" 550 -250 50 H I L CNN "Height"
+F6 "ROHM Semiconductor" 550 -550 50 H I L CNN "Manufacturer_Name"
+F7 "KTR10EZPF4220" 550 -650 50 H I L CNN "Manufacturer_Part_Number"
+DRAW
+P 5 0 1 6 200 50 500 50 500 -50 200 -50 200 50 N
+X ~ 1 0 0 200 R 50 50 0 0 P
+X ~ 2 700 0 200 L 50 50 0 0 P
+ENDDRAW
+ENDDEF
+#
+# LTST-C171GKT-SamacSys_Parts
+#
+DEF LTST-C171GKT-SamacSys_Parts LED 0 30 Y Y 1 F N
+F0 "LED" 500 350 50 H V L BNN
+F1 "LTST-C171GKT-SamacSys_Parts" 500 250 50 H V L BNN
+F2 "LEDC2012X90N" 500 150 50 H I L BNN
+F3 "http://uk.rs-online.com/web/p/products/6920935P" 500 50 50 H I L BNN
+F4 "Lite-On LTST-C171GKT, CHIPLED 0805 569 nm Green LED, 2012 (0805) SMD package" 500 -50 50 H I L BNN "Description"
+F5 "0.9" 500 -150 50 H I L BNN "Height"
+F6 "6920935P" 500 -250 50 H I L BNN "RS Part Number"
+F7 "http://uk.rs-online.com/web/p/products/6920935P" 500 -350 50 H I L BNN "RS Price/Stock"
+F8 "Lite-On" 500 -450 50 H I L BNN "Manufacturer_Name"
+F9 "LTST-C171GKT" 500 -550 50 H I L BNN "Manufacturer_Part_Number"
+DRAW
+P 2 0 1 6 100 0 200 0 N
+P 2 0 1 6 200 100 200 -100 N
+P 2 0 1 6 250 100 150 200 N
+P 2 0 1 6 350 100 250 200 N
+P 2 0 1 6 400 0 500 0 N
+P 4 0 1 6 200 0 400 100 400 -100 200 0 N
+P 4 0 1 10 210 170 180 140 150 200 210 170 F
+P 4 0 1 10 310 170 280 140 250 200 310 170 F
+X K 1 0 0 100 R 50 50 0 0 P
+X A 2 600 0 100 L 50 50 0 0 P
+ENDDRAW
+ENDDEF
+#
+# M20-9990645-SamacSys_Parts
+#
+DEF M20-9990645-SamacSys_Parts J 0 30 Y Y 1 F N
+F0 "J" 650 300 50 H V L CNN
+F1 "M20-9990645-SamacSys_Parts" 650 200 50 H V L CNN
+F2 "HDRV6W66P0X254_1X6_1524X254X874P" 650 100 50 H I L CNN
+F3 "http://uk.rs-online.com/web/p/products/6812994P" 650 0 50 H I L CNN
+F4 "M20 Header, Pin, Sil, Vertical, 6 W HARWIN M20 Series, 2.54mm Pitch 6 Way 1 Row Straight Pin Header, Through Hole, Solder Termination" 650 -100 50 H I L CNN "Description"
+F5 "8.74" 650 -200 50 H I L CNN "Height"
+F6 "6812994P" 650 -300 50 H I L CNN "RS Part Number"
+F7 "http://uk.rs-online.com/web/p/products/6812994P" 650 -400 50 H I L CNN "RS Price/Stock"
+F8 "Harwin" 650 -500 50 H I L CNN "Manufacturer_Name"
+F9 "M20-9990645" 650 -600 50 H I L CNN "Manufacturer_Part_Number"
+F10 "R1052705" 650 -700 50 H I L CNN "Allied_Number"
+DRAW
+P 5 0 1 6 200 100 600 100 600 -600 200 -600 200 100 N
+X 1 1 0 0 200 R 50 50 0 0 P
+X 2 2 0 -100 200 R 50 50 0 0 P
+X 3 3 0 -200 200 R 50 50 0 0 P
+X 4 4 0 -300 200 R 50 50 0 0 P
+X 5 5 0 -400 200 R 50 50 0 0 P
+X 6 6 0 -500 200 R 50 50 0 0 P
+ENDDRAW
+ENDDEF
+#
+# PIC18LF14K50-I_SO-SamacSys_Parts
+#
+DEF PIC18LF14K50-I_SO-SamacSys_Parts IC 0 30 Y Y 1 F N
+F0 "IC" 3350 300 50 H V L CNN
+F1 "PIC18LF14K50-I_SO-SamacSys_Parts" 3350 200 50 H V L CNN
+F2 "SOIC127P1030X265-20N" 3350 100 50 H I L CNN
+F3 "http://uk.rs-online.com/web/p/products/6669239P" 3350 0 50 H I L CNN
+F4 "MCU 16K Flash 768 RAM USB 2.0 SOIC20" 3350 -100 50 H I L CNN "Description"
+F5 "2.65" 3350 -200 50 H I L CNN "Height"
+F6 "6669239P" 3350 -300 50 H I L CNN "RS Part Number"
+F7 "http://uk.rs-online.com/web/p/products/6669239P" 3350 -400 50 H I L CNN "RS Price/Stock"
+F8 "Microchip" 3350 -500 50 H I L CNN "Manufacturer_Name"
+F9 "PIC18LF14K50-I/SO" 3350 -600 50 H I L CNN "Manufacturer_Part_Number"
+F10 "70047097" 3350 -700 50 H I L CNN "Allied_Number"
+DRAW
+P 5 0 1 6 200 100 3300 100 3300 -1000 200 -1000 200 100 N
+X VDD 1 0 0 200 R 50 50 0 0 P
+X IOCB7/TX/CK/RB7 10 0 -900 200 R 50 50 0 0 P
+X RB6/IOCB6/SCK/SCL 11 3500 -900 200 L 50 50 0 0 P
+X RB5/AN11/IOCB5/RX/DT 12 3500 -800 200 L 50 50 0 0 P
+X RB4/AN10/IOCB4/SDI/SDA 13 3500 -700 200 L 50 50 0 0 P
+X RC2/AN6/P1D/C12IN2-/CVREF/INT2 14 3500 -600 200 L 50 50 0 0 P
+X RC1/AN5/C12IN1-/INT1/VREF- 15 3500 -500 200 L 50 50 0 0 P
+X RC0/AN4/C12IN+/INT0/VREF+ 16 3500 -400 200 L 50 50 0 0 P
+X VUSB 17 3500 -300 200 L 50 50 0 0 P
+X RA1/IOCA1/D-/PGC 18 3500 -200 200 L 50 50 0 0 P
+X RA0/IOCA0/D+/PGD 19 3500 -100 200 L 50 50 0 0 P
+X IOCA5/OSC1/CLKIN/RA5 2 0 -100 200 R 50 50 0 0 P
+X VSS 20 3500 0 200 L 50 50 0 0 P
+X AN3/IOCA3/OSC2/CLKOUT/RA4 3 0 -200 200 R 50 50 0 0 P
+X IOCA3/~MCLR~/VPP/RA3 4 0 -300 200 R 50 50 0 0 P
+X CCP1/P1A/T0CKI/RC5 5 0 -400 200 R 50 50 0 0 P
+X P1B/C12OUT/SRQ/RC4 6 0 -500 200 R 50 50 0 0 P
+X N7/P1C/C12IN3-/PGM/RC3 7 0 -600 200 R 50 50 0 0 P
+X AN8/~SS~/T13CKI/T1OSCI/RC6 8 0 -700 200 R 50 50 0 0 P
+X AN9/SDO/T1OSCO/RC7 9 0 -800 200 R 50 50 0 0 P
+ENDDRAW
+ENDDEF
+#
+# SMMBT5551LT1G-SamacSys_Parts
+#
+DEF SMMBT5551LT1G-SamacSys_Parts Q 0 30 Y Y 1 F N
+F0 "Q" 550 50 50 H V L CNN
+F1 "SMMBT5551LT1G-SamacSys_Parts" 550 -50 50 H V L CNN
+F2 "SOT96P237X111-3N" 550 -150 50 H I L CNN
+F3 "http://uk.rs-online.com/web/p/products/1841498P" 550 -250 50 H I L CNN
+F4 "NPN Bipolar Transistor, 600 mA 160 V, 3-pin SOT-23" 550 -350 50 H I L CNN "Description"
+F5 "1.11" 550 -450 50 H I L CNN "Height"
+F6 "1841498P" 550 -550 50 H I L CNN "RS Part Number"
+F7 "http://uk.rs-online.com/web/p/products/1841498P" 550 -650 50 H I L CNN "RS Price/Stock"
+F8 "ON Semiconductor" 550 -750 50 H I L CNN "Manufacturer_Name"
+F9 "SMMBT5551LT1G" 550 -850 50 H I L CNN "Manufacturer_Part_Number"
+F10 "70300580" 550 -950 50 H I L CNN "Allied_Number"
+DRAW
+C 350 0 158 0 1 10 N
+P 2 0 1 6 100 0 300 0 N
+P 2 0 1 6 300 -50 400 -150 N
+P 2 0 1 6 300 50 400 150 N
+P 2 0 1 20 300 100 300 -100 N
+P 2 0 1 6 400 -150 400 -200 N
+P 2 0 1 6 400 150 400 200 N
+P 4 0 1 10 330 -100 350 -80 370 -120 330 -100 F
+X ~ 1 0 0 100 R 50 50 0 0 P
+X ~ 2 400 -300 100 U 50 50 0 0 P
+X ~ 3 400 300 100 D 50 50 0 0 P
+ENDDRAW
+ENDDEF
+#
+# TMB12A05-SamacSys_Parts
+#
+DEF TMB12A05-SamacSys_Parts LS 0 30 Y Y 1 F N
+F0 "LS" 650 300 50 H V L CNN
+F1 "TMB12A05-SamacSys_Parts" 650 200 50 H V L CNN
+F2 "TMB12A05" 650 100 50 H I L CNN
+F3 "https://datasheet.lcsc.com/szlcsc/Jiangsu-Huaneng-Elec-TMB12A05_C96093.pdf" 650 0 50 H I L CNN
+F4 "12*9.5 Buzzers RoHS" 650 -100 50 H I L CNN "Description"
+F5 "9.5" 650 -200 50 H I L CNN "Height"
+F6 "Jiangsu Huaneng Elec" 650 -500 50 H I L CNN "Manufacturer_Name"
+F7 "TMB12A05" 650 -600 50 H I L CNN "Manufacturer_Part_Number"
+DRAW
+P 5 0 1 6 200 100 600 100 600 -200 200 -200 200 100 N
+X + 1 0 -100 200 R 50 50 0 0 P
+X - 2 0 0 200 R 50 50 0 0 P
+ENDDRAW
+ENDDEF
+#
+#End Library
