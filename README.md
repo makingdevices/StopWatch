@@ -71,7 +71,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Bytes Counter Shot][product-screenshot]](https://makingdevices.com/Bytes-Counter)
+[![Bytes Counter Shot][product-screenshot]](https://makingdevices.com/StopWatch)
 
 This project is a simple StopWatch for measuring times on different processes or activities. The project was chosen to test some 4-layers PCBs and experiment with both the XLP (Extreme Low-Power Technology) and the pic18LF14k50 itself. You can measure from milliseconds to more than 99h. 
 
@@ -146,7 +146,7 @@ Distributed under the GPLv3 License. See `LICENSE.txt` for more information.
 
 Making Devices - [@MakingDevices](https://www.instagram.com/makingdevices/)
 
-Project Link: [https://github.com/makingdevices/Bytes-Counter](https://github.com/makingdevices/StopWatch)
+Project Link: [https://github.com/makingdevices/StopWatch](https://github.com/makingdevices/StopWatch)
 
 Other Links: [LinkTree](https://makingdevices.com/links/)
 
