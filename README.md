@@ -95,9 +95,10 @@ The PCB does not have any power button, since the project's approach is to use t
 
 1. Get the gerber files for the latest version: [V1](https://github.com/makingdevices/StopWatch/blob/main/v1/Gerber/StopWatchV1.zip) 
 2. Send them to a PCB manufacturer ([Our Sponsor is PCBWAY][sponsor-url])
-3. Buy all the components from the [Bill Of Materials]()
-4. Solder everything
+3. Buy all the components from the [Bill Of Materials](https://github.com/makingdevices/StopWatch/blob/main/v1/StopWatch_BOM.xlsx)
+4. Solder everything with the help of the [schematic](https://github.com/makingdevices/StopWatch/blob/main/v1/schematicv1.pdf)
 5. Burn the [latest firmware](https://github.com/makingdevices/StopWatch/blob/main/v1/Simulation/StopWatch.hex)
+6. Give us a Star to the respository ;)
 
 Here it is an assembly video:
 
