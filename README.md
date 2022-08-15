@@ -73,13 +73,10 @@
 
 [![Bytes Counter Shot][product-screenshot]](https://makingdevices.com/Bytes-Counter)
 
-Bytes Counter is a simple Tally Counter for counting people in places, helping you in inventories, practising soldering or just counting things at work! The project was chosen to test some PCB manufacturer capabilities and experiment with both the XLP (Extreme Low-Power Technology) and the pic18LF14k50 itself
+This project is a simple StopWatch for measuring times on different processes or activities. The project was chosen to test some 4-layers PCBs and experiment with both the XLP (Extreme Low-Power Technology) and the pic18LF14k50 itself. You can measure from milliseconds to more than 99h. 
 
-The PCB does not have any power button, since the project's approach is to use the XLP technology of the PIC. It only has two buttons: increase/decrease the count.
+The PCB does not have any power button, since the project's approach is to use the XLP technology of the PIC. It only has two buttons: start/mode button and pause/stop button.
 
-A buzzer helps you count anything without needing to read the display every time so that you can focus on your work.
-
-Even after weeks or months, the count is kept while in deep sleep mode.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -96,15 +93,15 @@ Even after weeks or months, the count is kept while in deep sleep mode.
 
 ## Build one
 
-1. Get the gerber files for the latest version: [V1](https://github.com/makingdevices/Bytes-Counter/blob/main/v1/Gerber/BytesCounterV1.zip) 
+1. Get the gerber files for the latest version: [V1](https://github.com/makingdevices/StopWatch/blob/main/v1/Gerber/StopWatchV1.zip) 
 2. Send them to a PCB manufacturer ([Our Sponsor is PCBWAY][sponsor-url])
-3. Buy all the components from the [Bill Of Materials](https://github.com/makingdevices/Bytes-Counter/blob/main/v1/BytesCounter_BOM.xlsx)
+3. Buy all the components from the [Bill Of Materials]()
 4. Solder everything
-5. Burn the [latest firmware](https://github.com/makingdevices/Bytes-Counter/blob/main/v1/Simulation/Bytes_Counter.hex)
+5. Burn the [latest firmware](https://github.com/makingdevices/StopWatch/blob/main/v1/Simulation/StopWatch.hex)
 
 Here it is an assembly video:
 
-[![Assembly Shot][YT-screenshot]](https://www.youtube.com/watch?v=Gu0cR_CFLYs)
+[![Assembly Shot][YT-screenshot]](https://www.youtube.com/watch?v=HLl4U4vhF9I)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -113,26 +110,28 @@ Here it is an assembly video:
 
 Instructions of use:
 
-- Pressing "+" or "-" will increase/decrease the count.
-- Long press "+" : Sound Event -> Activate/Deactivate buzzer sounds.
-- Long press "-" : Reset event -> Reset the count.
-- 60s without pressing any button: Deep Sleep Mode -> Display off.
-- Any button pulsation will exit Deep Sleep Mode.
+- Pressing "Start" will start the StopWatch.
+- Pressing "Pause" will stop the StopWatch.
+- Long press "Start" : it will change the display mode.
+- Long press "Stop" : It will reset the time to 0.
+- 60s without pressing any button: Save Energy Mode -> Display off. It will still count the time. 
+- 10s without pressing any button in pause mode: Deep Sleep Mode -> Display off. Not counting
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- ROADMAP -->
 ## Roadmap
 
-- [x] Count up/down and show it on screen
-- [x] enable/disable sound when pressing buttons
+- [x] Stopwatch and show it on screen
+- [] enable/disable sound when pressing buttons
 - [x] Low Power Consumption
     - [x] Lower the frequency of the microcontroller at minimum
     - [x] Enter deep sleep mode automatically
+    - [x] Save energy mode while still working: Display off
 
-See the [open issues](https://github.com/makingdevices/Bytes-Counter/issues) for a full list of proposed features (and known issues).
+See the [open issues](https://github.com/makingdevices/StopWatch/issues) for a full list of proposed features (and known issues).
 
-State: Project <b>FINISHED</b> - 01/08/2022
+State: Project <b>FINISHED</b> - 15/08/2022
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -147,7 +146,7 @@ Distributed under the GPLv3 License. See `LICENSE.txt` for more information.
 
 Making Devices - [@MakingDevices](https://www.instagram.com/makingdevices/)
 
-Project Link: [https://github.com/makingdevices/Bytes-Counter](https://github.com/makingdevices/Bytes-Counter)
+Project Link: [https://github.com/makingdevices/Bytes-Counter](https://github.com/makingdevices/StopWatch)
 
 Other Links: [LinkTree](https://makingdevices.com/links/)
 
@@ -167,16 +166,16 @@ PCBWay is the most professional PCB manufacturer for prototyping and low-volume 
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/makingdevices/Bytes-Counter.svg?style=for-the-badge
-[contributors-url]: https://github.com/makingdevices/Bytes-Counter/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/makingdevices/Bytes-Counter.svg?style=for-the-badge
-[forks-url]: https://github.com/makingdevices/Bytes-Counter/network/members
-[stars-shield]: https://img.shields.io/github/stars/makingdevices/Bytes-Counter.svg?style=for-the-badge
-[stars-url]: https://github.com/makingdevices/Bytes-Counter/stargazers
-[issues-shield]: https://img.shields.io/github/issues/makingdevices/Bytes-Counter.svg?style=for-the-badge
-[issues-url]: https://github.com/makingdevices/Bytes-Counter/issues
+[contributors-shield]: https://img.shields.io/github/contributors/makingdevices/StopWatch.svg?style=for-the-badge
+[contributors-url]: https://github.com/makingdevices/StopWatch/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/makingdevices/StopWatch.svg?style=for-the-badge
+[forks-url]: https://github.com/makingdevices/StopWatch/network/members
+[stars-shield]: https://img.shields.io/github/stars/makingdevices/StopWatch.svg?style=for-the-badge
+[stars-url]: https://github.com/makingdevices/StopWatch/stargazers
+[issues-shield]: https://img.shields.io/github/issues/makingdevices/StopWatch.svg?style=for-the-badge
+[issues-url]: https://github.com/makingdevices/StopWatch/issues
 [license-shield]: /images/license.svg
-[license-url]: https://github.com/makingdevices/Bytes-Counter/blob/master/LICENSE.txt
+[license-url]: https://github.com/makingdevices/StopWatch/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/company/making-devices/
 [sponsor-shield]: https://img.shields.io/badge/SPONSOR-PCBWAY-black.svg?style=for-the-badge&colorB=1200
