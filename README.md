@@ -124,7 +124,7 @@ Instructions of use:
 ## Roadmap
 
 - [x] Stopwatch and show it on screen
-- [ ] enable/disable sound when pressing buttons
+- [x] enable/disable sound when pressing buttons
 - [x] Low Power Consumption
     - [x] Lower the frequency of the microcontroller at minimum
     - [x] Enter deep sleep mode automatically
