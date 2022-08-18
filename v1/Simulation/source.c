@@ -15,6 +15,9 @@
 
 char digit = 0;
 char display = 0;
+char buzz = 0; //Buzzer counter
+int buzzer_time = 25; //Time for the buzzer sound
+
 char const vector[] = {0b00111111,0b00000110,0b01011011,0b01001111,0b01100110,0b01101101,0b01111101,0b00000111,0b01111111,0b01100111,0b01111001};
 char number[] = {0,0,0,0,0,0,0,0,0};
 char pause = 0; // 0 = run // 1 = paused
@@ -65,6 +68,8 @@ void _high_isr (void)
 		screen_sleep = 0;
 		reset++; //We increase reset.
 		if (reset>event_reset && screen_mode == 1){ //If we have the button pressed for a while...
+			buzz = 1;   //We activate buzz and LED
+			LATA = 0b00100000;
 			number[0] = 0;   //We reset the count.
 			number[1] = 0;
 			number[2] = 0;
@@ -84,6 +89,8 @@ void _high_isr (void)
 		screen_sleep = 0;
 		modes++; //We increase reset.
 		if ((modes>event_modes) && screen_mode == 1){ //If we have the button pressed for a while...
+			buzz = 1;   //We activate buzz and LED
+			LATA = 0b00100000;
 			if(clock_mode >0 && clock_mode < 4){
 				clock_mode = 0;
 			} else if (clock_mode == 0){
@@ -102,6 +109,14 @@ void _high_isr (void)
 	TMR0H = 0xFC;
 	TMR0L = 0xAA; 
 
+	if(buzz > 0) {  //If the buzzer was activated
+		buzz++; //increase buzz time
+	} 
+	if(buzz > buzzer_time) { //If the buzzer has been activated long enough
+		buzz = 0;	//we stop the buzzer
+		PORTA = 0;
+	} 
+
 	if (count_offset == offset){
 		if(pause==0) add_1ms();
 		count_offset = 0;
@@ -110,9 +125,8 @@ void _high_isr (void)
 	}
 
 	LATC = 0;
-
 	if(screen_mode==1){
-		if(clock_mode < 4) {
+		if(clock_mode < 4) {  //SET THE display into the specific position
 			switch(digit){
 				case 3:
 					LATB = 0b10000000;
@@ -141,15 +155,10 @@ void _high_isr (void)
 				display = 0;
 			}
 		}
-		if(clock_mode >0 && clock_mode < 4){
-			clock_mode = 1;
-			if(number[4] > 0 || number[5] > 0) clock_mode = 2;
-			if(number[6] > 0 || number[7] > 0) clock_mode = 3;
-		}
-		switch (clock_mode){
+		switch (clock_mode){  //Set the number in the C PORT
 			case 0:
 				if((digit+display*4)==2||(digit+display*4)==4||(digit+display*4)==6){
-					LATC = (vector[number[digit+display*4]])|0b10000000;
+					LATC = (vector[number[digit+display*4]])|0b10000000;  //The dot of the display
 				} else {
 					LATC = vector[number[digit+display*4]];
 				}
@@ -157,7 +166,7 @@ void _high_isr (void)
 			case 3:
 				if ((digit+display*4)==0 || (digit+display*4)== 7){
 					LATC = 0;
-				} else if((digit+display*4)==3||(digit+display*4)==5){
+				} else if((digit+display*4)==3||(digit+display*4)==5){ //The dot of the display
 					LATC = (vector[number[digit+1+display*4]])|0b10000000;
 				} else {
 					LATC = vector[number[digit+1+display*4]];
@@ -168,7 +177,7 @@ void _high_isr (void)
 					LATC = 0;
 					LATB = 0;
 				} else if((digit+display*4)==3||(digit+display*4)==5){
-					LATC = (vector[number[digit-1+display*4]])|0b10000000;
+					LATC = (vector[number[digit-1+display*4]])|0b10000000; //The dot of the display
 				} else {
 					LATC = vector[number[digit-1+display*4]];
 				}
@@ -178,7 +187,7 @@ void _high_isr (void)
 					LATC = 0;
 					LATB = 0;
 				} else if((digit+display*4)==4){
-					LATC = (vector[number[digit-2+display*4]])|0b10000000;
+					LATC = (vector[number[digit-2+display*4]])|0b10000000; //The dot of the display
 				} else {
 					LATC = vector[number[digit-2+display*4]];
 				}
@@ -190,7 +199,12 @@ void _high_isr (void)
 			default:
 				break;
 		}
-	}
+		if(clock_mode >0 && clock_mode < 4){
+			clock_mode = 1;
+			if(number[4] > 0 || number[5] > 0) clock_mode = 2;
+			if(number[6] > 0 || number[7] > 0) clock_mode = 3;
+		}
+	} 
 	INTCONbits.TMR0IF = 0; // reset overflow bit
 	}
  	if(INTCONbits.RABIF) { 
