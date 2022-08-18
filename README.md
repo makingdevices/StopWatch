@@ -129,10 +129,12 @@ Instructions of use:
     - [x] Lower the frequency of the microcontroller at minimum
     - [x] Enter deep sleep mode automatically
     - [x] Save energy mode while still working: Display off
+- [ ] Measure power consumption
+
 
 See the [open issues](https://github.com/makingdevices/StopWatch/issues) for a full list of proposed features (and known issues).
 
-State: Project <b>FINISHED</b> - 15/08/2022
+State: Project <b>FINISHED</b> - 18/08/2022
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
