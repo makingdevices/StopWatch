@@ -141,7 +141,14 @@ State: Project <b>FINISHED</b> - 18/08/2022
 <!-- LICENSE -->
 ## License
 
-Distributed under the GPLv3 License. See `LICENSE.txt` for more information.
+## License
+
+Distributed under three licenses:
+- [Hardware](/License/HW_cern_ohl_s_v2.pdf)
+- [Software](/License/SW_GPLv3.0.txt)
+- [Documentation](/License/Documentation_CC-BY-SA-4.0.txt)
+
+[![GPL v3 License][license-shield]][license-url] 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- CONTACT -->
@@ -177,7 +184,7 @@ PCBWay is the most professional PCB manufacturer for prototyping and low-volume 
 [stars-url]: https://github.com/makingdevices/StopWatch/stargazers
 [issues-shield]: https://img.shields.io/github/issues/makingdevices/StopWatch.svg?style=for-the-badge
 [issues-url]: https://github.com/makingdevices/StopWatch/issues
-[license-shield]: /images/license.svg
+[license-shield]: /images/license.jpg
 [license-url]: https://github.com/makingdevices/StopWatch/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/company/making-devices/

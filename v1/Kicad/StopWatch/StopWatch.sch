@@ -752,10 +752,6 @@ Text GLabel 7150 1600 0    50   Input ~ 0
 +3V
 Text GLabel 9750 1750 0    50   Input ~ 0
 +3V
-Wire Notes Line
-	750  750  11150 750 
-Wire Notes Line
-	11150 750  11150 6450
 Text Label 2500 2950 2    50   ~ 0
 MCLR
 Text Label 4300 2950 0    50   ~ 0

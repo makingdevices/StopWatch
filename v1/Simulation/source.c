@@ -101,6 +101,7 @@ void _high_isr (void)
 			}
 			modes = 1;
 		}
+		if(clock_mode==4 && screen_mode==0) clock_mode=1;
 		screen_mode = 1;
 	} else{	
 		modes = 0; //If we are not pressing nothing, reset = 0.
@@ -123,9 +124,7 @@ void _high_isr (void)
 	} else {
 		count_offset++;
 	}
-
 	LATC = 0;
-	if(screen_mode==1){
 		if(clock_mode < 4) {  //SET THE display into the specific position
 			switch(digit){
 				case 3:
@@ -203,8 +202,7 @@ void _high_isr (void)
 			clock_mode = 1;
 			if(number[4] > 0 || number[5] > 0) clock_mode = 2;
 			if(number[6] > 0 || number[7] > 0) clock_mode = 3;
-		}
-	} 
+		} 
 	INTCONbits.TMR0IF = 0; // reset overflow bit
 	}
  	if(INTCONbits.RABIF) { 
@@ -234,9 +232,11 @@ void _high_isr (void)
 	if (deep_sleep > sleep_time){ //If the time for sleep has come
 		OSCCONbits.IDLEN = 0; //Prepare the microchip for deep sleep.
 		LATB = 0b00000000; //turn off the display
+		LATC = 0b00000000;
 	}
 	if (screen_sleep > screen_time){ //If the time for screen has come
 		screen_mode = 0;
+        clock_mode = 4;
 	}
 }
 
