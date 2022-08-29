@@ -22,7 +22,6 @@
 [![PCBWAY][sponsor-shield]][sponsor-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
-[![GPL v3 License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
 
@@ -184,8 +183,8 @@ PCBWay is the most professional PCB manufacturer for prototyping and low-volume 
 [stars-url]: https://github.com/makingdevices/StopWatch/stargazers
 [issues-shield]: https://img.shields.io/github/issues/makingdevices/StopWatch.svg?style=for-the-badge
 [issues-url]: https://github.com/makingdevices/StopWatch/issues
-[license-shield]: /images/license.jpg
-[license-url]: https://github.com/makingdevices/StopWatch/blob/master/LICENSE.txt
+[license-shield]: /images/license.png
+[license-url]: https://github.com/makingdevices/StopWatch/tree/main/License
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/company/making-devices/
 [sponsor-shield]: https://img.shields.io/badge/SPONSOR-PCBWAY-black.svg?style=for-the-badge&colorB=1200
